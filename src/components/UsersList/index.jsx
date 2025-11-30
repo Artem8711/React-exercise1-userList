@@ -9,15 +9,15 @@ const UsersList = () => {
   );
 
   const toggleSelect = (id) => {
-    setUsers((prev) =>
-      prev.map((user) =>
+    setUsers((p) =>
+      p.map((user) =>
         user.id === id ? { ...user, isSelected: !user.isSelected } : user
       )
     );
   };
 
   const deleteUser = (id) => {
-    setUsers((prev) => prev.filter((user) => user.id !== id));
+    setUsers((p) => p.filter((user) => user.id !== id));
   };
 
   return (

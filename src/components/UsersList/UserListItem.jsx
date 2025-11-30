@@ -4,7 +4,7 @@ const UserListItem = ({ user, onSelect, onDelete }) => {
       className={`user-card ${user.isSelected ? "selected" : ""}`}
       onClick={() => onSelect(user.id)}
     >
-      <img src={user.imgSrc} alt="avatar" />
+      <img src={user.imgSrc} />
 
       <div>
         <h3>
